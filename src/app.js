@@ -2,7 +2,8 @@ function generateExcuse() {
   let who = ["El perro", "Mi madre", "El cartero", "Mi pájaro"];
   let action = ["se comió", "orinó sobre", "aplastó", "rompió"];
   let what = ["mis deberes ", "mi ps5", "el coche"];
-  let when = ["antes de clase", "en la siesta ","mientras estaba en el futbol","en la comida"];
+  let when = ["antes de clase","en la siesta ","mientras estaba en el futbol","en la comida",];
+  
 
   let excuse = `${who[Math.floor(Math.random() * who.length)]} 
                 ${action[Math.floor(Math.random() * action.length)]} 
@@ -11,3 +12,5 @@ function generateExcuse() {
 
   document.getElementById("excuse").innerHTML = excuse;
 }
+
+window.onload(generateExcuse());
